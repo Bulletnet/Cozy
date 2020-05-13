@@ -1,0 +1,79 @@
+.card {
+    $self: &;
+    background-color: $global-background;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    &-image {
+        height: 270px;
+        margin-bottom: 29px;
+        img {
+          height: 100%;
+          width: auto;
+      }
+    } 
+    &-body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center; 
+      }  
+      &-body-title {
+        font-size: $global-medium-font-size;
+        letter-spacing: 1.2px;
+        margin-bottom: 20px;
+    }  
+    &:hover {
+        box-shadow: 0 2px 30px 5px rgba(13, 13, 13, 0.04);
+    }
+    &-contact {
+        
+        background-color: inherit;
+        align-items: flex-start;
+        #{$self}-title {
+            margin: 0;
+            color: $global-inverse-color;
+            font-size: $global-xlarge-font-size;
+            letter-spacing: 2.1px;
+            line-height: 45px;
+        }
+        #{$self}-list {
+            list-style-type: none;
+            margin: 0;
+            padding-left: 0;
+            color: $global-secondary-color;
+            font-family: $global-font-family-secondary;
+            font-size: $global-medium-font-size;
+            letter-spacing: 1.2px;
+        }
+        #{$self}-list-item {
+            display: flex;
+            align-items: center;
+            line-height: 22px;
+            margin-top: 34px;
+        }
+        #{$self}-list-item-social {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            &:hover {
+                color: $global-inverse-color;
+            }
+        }
+    }
+    &-logo {
+        background-color: inherit;
+        #{$self}-logo-image {
+            margin: 0;
+            height: 316px;
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+

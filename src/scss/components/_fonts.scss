@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'cozyhouse';
+    src:  url('../fonts/cozyhouse.eot?1qo320');
+    src:  url('../fonts/cozyhouse.eot?1qo320#iefix') format('embedded-opentype'),
+      url('../fonts/cozyhouse.ttf?1qo320') format('truetype'),
+      url('../fonts/cozyhouse.woff?1qo320') format('woff'),
+      url('../fonts/cozyhouse.svg?1qo320#cozyhouse') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'cozyhouse' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-pin:before {
+    content: "\e900";
+  }
+  .icon-envelope:before {
+    content: "\e901";
+  }
+  .icon-telephone:before {
+    content: "\e902";
+  }
+  

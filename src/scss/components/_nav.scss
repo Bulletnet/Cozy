@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    font-family: $global-font-family-third;
+    &-item {
+        padding: 0 20px;      
+    } 
+    &-line {
+        position: relative; 
+    }
+    &-line:hover::after {
+        content: "";
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1.5px solid $global-border;
+        width: 100%;
+    }
+}
+.is-active {
+    position: relative;
+    color: $global-primary-color;
+    &::after {
+        content: "";
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1.5px solid $global-border;
+        width: 100%;
+    }
+    &:hover {
+        color: $global-primary-color;
+    }
+}

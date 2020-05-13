@@ -1,0 +1,23 @@
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  &-large {
+    margin: 0 -15px;
+}
+  &-large > .column {
+    padding: 0 15px 34px 15px;
+}
+  &-medium {
+    margin: 0 -59px;
+  }
+  &-medium > .column {
+    padding: 0 59px;
+  }
+  &-small {
+    margin: 0 -78px;
+  }
+  &-small > .column {
+    padding: 0 78px;
+  }
+}
+  
